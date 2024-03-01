@@ -1,0 +1,73 @@
+/* Reset */
+* {
+  padding: 0 15px;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url("/assets/images/bg.jpg") no-repeat center center/cover;
+}
+
+.hero {
+  position: relative;
+  padding: 20px;
+  height: 100vh;
+}
+
+h1 {
+  top: 10px;
+  font-size: 50px;
+  padding: 10px 0;
+  color: #eee;
+}
+
+input {
+  height: 50px;
+  width: 100%;
+  background-color: rgb(250, 247, 247);
+  border-radius: 3px;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0;
+}
+
+.todo-item {
+  background-color: rgb(230, 215, 215);
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-size: 30px;
+}
+
+.todo-item button {
+  height: 50px;
+  width: 5%;
+  background-color: #ffffff;
+  color: #080710;
+  padding: 15px 0;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-button {
+  height: 50px;
+  width: 10%;
+  background-color: #ffffff;
+  color: #080710;
+  padding: 15px 0;
+  font-size: 22px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+}
