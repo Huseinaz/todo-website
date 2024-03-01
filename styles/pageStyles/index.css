@@ -39,18 +39,25 @@ input {
 }
 
 .todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: rgb(230, 215, 215);
   padding: 10px;
-  margin-bottom: 10px;
+  margin:15px 0;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  cursor: pointer;
   font-size: 30px;
+}
+
+.todo-item p {
+  flex: 1;
 }
 
 .todo-item button {
   height: 50px;
-  width: 5%;
+  width: 70px;
+  margin-left: 10px;
   background-color: #ffffff;
   color: #080710;
   padding: 15px 0;
@@ -62,7 +69,7 @@ input {
 
 .add-button {
   height: 50px;
-  width: 10%;
+  width: 100px;
   background-color: #ffffff;
   color: #080710;
   padding: 15px 0;
@@ -70,4 +77,36 @@ input {
   font-weight: 600;
   border-radius: 5px;
   cursor: pointer;
+}
+
+@media (max-width: 650px) {
+  .hero {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero > img {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 30px;
+    padding-bottom: 50px;
+  }
+  input {
+    height: 50px;
+  }
+  .todo-item {
+    font-size: 20px;
+  }
+  .todo-item button {
+    height: 40px;
+    width: 40px;
+    font-size: 11px;
+  }
+  .add-button {
+    height: 50px;
+    min-width: 50px;
+    font-size: 18px;
+  }
 }
